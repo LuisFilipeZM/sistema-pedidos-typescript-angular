@@ -1,0 +1,7 @@
+.nav-item:hover{
+    transition: 1s;
+    background-color: gray;
+}
+.nav-item{
+    transition: 0.2s;
+}

@@ -1,0 +1,28 @@
+<form lass="row g-3 needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nome:</label>
+      <span style="color: #FF0000;">*</span>
+      <input type="text" class="form-control" name="nome" [(ngModel)]="nome" aria-describedby="emailHelp" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email:</label>
+      <span style="color: #FF0000;">*</span>
+      <input type="email" class="form-control" name="nome" [(ngModel)]="email" aria-describedby="emailHelp" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Senha:</label>
+      <span style="color: #FF0000;">*</span>
+      <input type="password" class="form-control" name="senha" [(ngModel)]="senha" required>
+    </div>
+    <div class="alert alert-info" id="alerta" role="alert" *ngIf="display_success">
+      Cadastrado com sucesso!
+    </div>
+  
+    <div class="alert alert-danger" id="alerta" role="alert" *ngIf="display_error">
+      Preencha todos os dados obrigatorios(*)!
+    </div>
+    <button type="submit" id="enviar" class="btn btn-primary" style="margin: 5px;"  (click)="salvar()">Cadastrar</button>
+    <button type="submit" class="btn btn-warning" style="margin: 5px;" (click)="carregar()">Carregar</button>
+    <button type="submit" class="btn btn-danger" style="margin: 5px;" (click)="limpar()">Limpar</button>
+</form>
+ 

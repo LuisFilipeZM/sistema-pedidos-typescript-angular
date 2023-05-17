@@ -1,0 +1,10 @@
+<form class="form-floating">
+    <input type="text" class="form-control" id="floatingInputValue" id="nome" name="nome" [(ngModel)]="nome">
+    <label for="floatingInputValue" style="color: black;">Cidade:</label>
+    <br>
+    <app-lista-estado #lista_estado_component></app-lista-estado>
+    <br>
+    <button type="button" (click)="salvar()" class="btn btn-primary mb-3">Salvar</button>
+    <br>
+    <button type="button" (click)="limpar()" class="btn btn-danger mb-3">Limpar</button>
+</form>
